@@ -16,3 +16,7 @@ How to use:
 ```
 
 Then open the app in Android Studio and/or XCode.
+
+### Notes
+
+- Splashscreen setup: Followed these steps to get the splash screen library set up: https://github.com/zoontek/react-native-bootsplash.

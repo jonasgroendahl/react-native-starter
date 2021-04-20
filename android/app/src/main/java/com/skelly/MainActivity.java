@@ -1,6 +1,9 @@
 package com.skelly;
 
+import android.os.Bundle; // react-native-bootslash
 import com.facebook.react.ReactActivity;
+
+import com.zoontek.rnbootsplash.RNBootSplash; // react-native-bootslash
 
 public class MainActivity extends ReactActivity {
 
@@ -12,4 +15,11 @@ public class MainActivity extends ReactActivity {
   protected String getMainComponentName() {
     return "skelly";
   }
+
+  @Override
+  protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    RNBootSplash.init(R.drawable.bootsplash, MainActivity.this); // <- display the generated bootsplash.xml drawable over our MainActivity
+  }
+  
 }

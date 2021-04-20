@@ -11,6 +11,10 @@ const About: React.FC<Props> = ({navigation}) => {
   return (
     <Div flex={1}>
       <ListItem
+        label="About the app"
+        onPress={() => navigation.navigate('AboutTheApp')}
+      />
+      <ListItem
         label="Privacy policy"
         onPress={() => navigation.navigate('Privacy')}
       />
