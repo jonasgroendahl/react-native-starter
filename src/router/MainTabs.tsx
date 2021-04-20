@@ -19,7 +19,7 @@ const MainTabs: React.FC = () => {
         name="HomeStack"
         component={HomeStack}
         options={{
-          tabBarIcon: props => <Icon name="home" {...props} />,
+          tabBarIcon: props => <Icon name="home" fontSize="xl" {...props} />,
           tabBarLabel: props => (
             <Text fontSize="sm" {...props} mb={5}>
               Home
@@ -31,7 +31,7 @@ const MainTabs: React.FC = () => {
         name="ProfileStack"
         component={ProfileStack}
         options={{
-          tabBarIcon: props => <Icon name="user" {...props} />,
+          tabBarIcon: props => <Icon name="user" fontSize="2xl" {...props} />,
           tabBarLabel: props => (
             <Text fontSize="sm" {...props} mb={5}>
               Profile

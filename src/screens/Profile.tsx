@@ -47,6 +47,18 @@ const Profile: React.FC<ProfileProps> = ({navigation}) => {
             }
           />
           <ListItem
+            label="Onboarding"
+            left={
+              <Icon
+                fontSize="4xl"
+                fontFamily="SimpleLineIcons"
+                color="black"
+                name="graduation"
+              />
+            }
+            onPress={() => navigation.navigate('OnBoarding')}
+          />
+          <ListItem
             label="Sign out"
             left={
               <Icon
